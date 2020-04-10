@@ -23,7 +23,7 @@ public class TextParser {
     	return result;
     }
     
-    public static Component recParse(Component parrentComponent, String text, int level) {
+    public static void recParse(Component parrentComponent, String text, int level) {
 	    if (logger.isInfoEnabled())	{logger.info("Parse test level:"+level);}
 	    if (logger.isInfoEnabled())	{logger.info("RegExp:"+ParseLevel.getRegexpByLevel(level));}
 	    
@@ -46,7 +46,6 @@ public class TextParser {
         	
         }
     	
-    	return null;
     }
 	
 	public static Component parse(String path) {

@@ -27,4 +27,16 @@ public class CompositeTextTest {
 		Assert.assertEquals(text.getData(), resultTestText);
 	}
 
+
+
+	@Test
+	public void testReading() {
+    	String testText = "	Do you enjoy reading stories?In this section, read our entertaining stories.";
+    	Component text = TextParser.parseText(testText);
+        
+    	String resultTestText = "Do you enjoy reading stories?In this section, read our entertaining stories.";
+		
+		Assert.assertEquals(text.getData(), resultTestText);
+	}
+
 }
